@@ -30,7 +30,7 @@
         "Id" : 4,
         "Nome" : "Wii",
         "Valor" : 549.00,
-        "Status" : false,
+        "Status" : true,
         "Quantidade" : 9,
         "Imagem" : "/Imagens/Wii.png"
     },
@@ -77,6 +77,6 @@
         "Valor" : 2444.43,
         "Status" : false,
         "Quantidade" : 10,
-        "Imagem" : "/Imagens/I9"
+        "Imagem" : "/Imagens/Processador.jpg"
     }
 ]
