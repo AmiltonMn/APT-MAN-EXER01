@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
         .then((data) => {
             produtos = data;
             console.log(produtos);
+            
+            /* o "document,getElementByTagName" foi alterado para "document.getElementById" pois a função que estava anteriormente não existe*/
             const produtosContainer = document.getElementById("produtosContainer")
 
             produtos.forEach((produto, index) => {
