@@ -2,8 +2,8 @@
 let produtos;
 
 window.onload = function () {
-  var storedUser = localStorage.getItem("usuario");
-  var user = JSON.parse(storedUser);
+  // var storedUser = localStorage.getItem("usuario");
+  // var user = JSON.parse(storedUser);
   // document.getElementById("user").textContent = user.name;
   // document.getElementById("perfil").textContent = user.name;
   // document.getElementById("idPerfil").textContent = user.id;
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       produtos = data;
       const produtosContainer =
-        document.getElementsByTagName("produtos-container");
+        document.getElementById("produtos-container");
 
       produtos.forEach((produto, index) => {
         const card = document.createElement("div");
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         card.style.marginRight = "10px";
 
         const imagem = document.createElement("img");
-        imagem.src = produto.imagem;
+        imagem.src = produto.Imagem;
         imagem.className = "card-img-top";
 
         const cardBody = document.createElement("div");
@@ -32,11 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const cardTitle = document.createElement("h5");
         cardTitle.className = "card-title";
-        cardTitle.textContent = produto.descricao;
+        cardTitle.textContent = produto.Nome;
 
         const cardText = document.createElement("p");
         cardText.className = "card-text";
-        cardText.textContent = "Preço: $" + produto.preco;
+        cardText.textContent = "Preço: $" + produto.Valor;
 
         const btnAdicionarAoCarrinho = document.createElement("a");
         btnAdicionarAoCarrinho.href = "#";
