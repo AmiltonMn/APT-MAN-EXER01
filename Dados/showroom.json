@@ -1,25 +1,25 @@
 [
     {
-        "Nome" : "Produto 1",
+        "Nome" : "PS5",
         "Valor" : 10.0,
         "Status" : false,
         "Quantidade" : 10,
-        "Imagem" : "/Imagens/Produto 1.jpg"
+        "Imagem" : "/Imagens/PS5.jpg"
     },
 
     {
-        "Nome" : "Produto 2",
+        "Nome" : "Switch",
         "Valor" : 20.0,
         "Status" : true,
         "Quantidade" : 10,
-        "Imagem" : "/Imagens/Produto 2.jpg"
+        "Imagem" : "/Imagens/Switch.jpg"
     },
 
     {
-        "Nome" : "Produto 2",
+        "Nome" : "Xbox",
         "Valor" : 20.0,
         "Status" : false,
         "Quantidade" : 10,
-        "Imagem" : "/Imagens/Produto 3.jpeg"
+        "Imagem" : "/Imagens/Xbox.jpeg"
     }
 ]
