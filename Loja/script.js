@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       produtos = data;
       const produtosContainer =
-        document.getElementById("produtos-container");
+        document.getElementById("produtosContainer");
 
       produtos.forEach((produto, index) => {
         const card = document.createElement("div");
@@ -26,23 +26,25 @@ document.addEventListener("DOMContentLoaded", function () {
         const imagem = document.createElement("img");
         imagem.src = produto.Imagem;
         imagem.className = "card-img-top";
+        imagem.style.width = "200px";
+        imagem.style.height = "200px";
 
         const cardBody = document.createElement("div");
-        cardBody.className = "card-body";
+          cardBody.className = "card-body";
 
         const cardTitle = document.createElement("h5");
-        cardTitle.className = "card-title";
-        cardTitle.textContent = produto.Nome;
+          cardTitle.className = "card-title";
+          cardTitle.textContent = produto.Nome;
 
         const cardText = document.createElement("p");
-        cardText.className = "card-text";
-        cardText.textContent = "Preço: $" + produto.Valor;
+          cardText.className = "card-text";
+          cardText.textContent = "Preço: $" + produto.Valor;
 
         const btnAdicionarAoCarrinho = document.createElement("a");
-        btnAdicionarAoCarrinho.href = "#";
-        btnAdicionarAoCarrinho.className = "btn btn-primary btn-adicionar-ao-carrinho";
-        btnAdicionarAoCarrinho.textContent = "Adicionar ao Carrinho";
-        btnAdicionarAoCarrinho.setAttribute("data-indice", index);
+          btnAdicionarAoCarrinho.href = "../Carrinho/carrinho.html";
+          btnAdicionarAoCarrinho.className = "btn btn-primary btn-adicionar-ao-carrinho";
+          btnAdicionarAoCarrinho.textContent = "Adicionar ao Carrinho";
+          btnAdicionarAoCarrinho.setAttribute("data-indice", index);
 
         cardBody.appendChild(cardTitle);
         cardBody.appendChild(cardText);
