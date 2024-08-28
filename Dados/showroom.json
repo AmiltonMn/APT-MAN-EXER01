@@ -1,25 +1,82 @@
 [
     {
+        "Id" : 1,
         "Nome" : "PS5",
-        "Valor" : 10.0,
+        "Valor" : 3989.90,
         "Status" : false,
         "Quantidade" : 10,
-        "Imagem" : "/Imagens/PS5.jpg"
+        "Imagem" : "/Imagens/PS5.jpeg"
     },
 
     {
+        "Id" : 2,
         "Nome" : "Switch",
-        "Valor" : 20.0,
+        "Valor" : 2199.90,
         "Status" : true,
         "Quantidade" : 10,
         "Imagem" : "/Imagens/Switch.jpg"
     },
 
     {
-        "Nome" : "Xbox",
-        "Valor" : 20.0,
+        "Id" : 3,
+        "Nome" : "Xbox series X",
+        "Valor" : 4189.00,
         "Status" : false,
         "Quantidade" : 10,
-        "Imagem" : "/Imagens/Xbox.jpeg"
+        "Imagem" : "/Imagens/Xbox.png"
+    },
+
+    {
+        "Id" : 4,
+        "Nome" : "Wii",
+        "Valor" : 549.00,
+        "Status" : false,
+        "Quantidade" : 10,
+        "Imagem" : "/Imagens/Wii.png"
+    },
+
+    {
+        "Id" : 5,
+        "Nome" : "The Last Of Us 2",
+        "Valor" : 215.00,
+        "Status" : false,
+        "Quantidade" : 10,
+        "Imagem" : "/Imagens/TLOU2.jpg"
+    },
+
+    {
+        "Id" : 6,
+        "Nome" : "God Of War Ragnarok",
+        "Valor" : 307.91,
+        "Status" : false,
+        "Quantidade" : 10,
+        "Imagem" : "/Imagens/GOWR.jpg"
+    },
+
+    {
+        "Id" : 7,
+        "Nome" : "SpiderMan 2",
+        "Valor" : 349.99,
+        "Status" : false,
+        "Quantidade" : 10,
+        "Imagem" : "/Imagens/SpiderMan2.jpg"
+    },
+
+    {
+        "Id" : 8,
+        "Nome" : "Game Pass",
+        "Valor" : 34.99,
+        "Status" : false,
+        "Quantidade" : 10,
+        "Imagem" : "/Imagens/GamePass.png"
+    },
+
+    {
+        "Id" : 9,
+        "Nome" : "I9",
+        "Valor" : 2444.43,
+        "Status" : false,
+        "Quantidade" : 10,
+        "Imagem" : "/Imagens/I9"
     }
 ]
