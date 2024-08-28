@@ -1,0 +1,25 @@
+[
+    {
+        "Nome" : "Produto 1",
+        "Valor" : 10.0,
+        "Status" : false,
+        "Quantidade" : 10,
+        "Imagem" : "/Imagens/Produto 1.jpg"
+    },
+
+    {
+        "Nome" : "Produto 2",
+        "Valor" : 20.0,
+        "Status" : true,
+        "Quantidade" : 10,
+        "Imagem" : "/Imagens/Produto 2.jpg"
+    },
+
+    {
+        "Nome" : "Produto 2",
+        "Valor" : 20.0,
+        "Status" : false,
+        "Quantidade" : 10,
+        "Imagem" : "/Imagens/Produto 3.jpeg"
+    }
+]
