@@ -4,20 +4,20 @@ let produtos;
 window.onload = function () {
   var storedUser = localStorage.getItem("usuario");
   var user = JSON.parse(storedUser);
-  document.getElementById("user").textContent = user.name;
-  document.getElementById("perfil").textContent = user.name;
-  document.getElementById("idPerfil").textContent = user.id;
+  // document.getElementById("user").textContent = user.name;
+  // document.getElementById("perfil").textContent = user.name;
+  // document.getElementById("idPerfil").textContent = user.id;
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("../Dados/loja.json")
+  fetch("../Dados/produtos.json") 
     .then((response) => response.json())
     .then((data) => {
       produtos = data;
       const produtosContainer =
         document.getElementsByTagName("produtos-container");
 
-      produtos.map((produto, index) => {
+      produtos.forEach((produto, index) => {
         const card = document.createElement("div");
         card.className = "card";
         card.style.width = "18rem";
@@ -36,12 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const cardText = document.createElement("p");
         cardText.className = "card-text";
-        cardText.textContent = "Preço: $" + produto.preco.toFixed(2);
+        cardText.textContent = "Preço: $" + produto.preco;
 
         const btnAdicionarAoCarrinho = document.createElement("a");
         btnAdicionarAoCarrinho.href = "#";
-        btnAdicionarAoCarrinho.className =
-          "btn btn-primary btn-adicionar-ao-carrinho";
+        btnAdicionarAoCarrinho.className = "btn btn-primary btn-adicionar-ao-carrinho";
         btnAdicionarAoCarrinho.textContent = "Adicionar ao Carrinho";
         btnAdicionarAoCarrinho.setAttribute("data-indice", index);
 
