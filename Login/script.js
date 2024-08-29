@@ -1,5 +1,6 @@
-const btn = document.querySelector('.modalBtn')
-const modal = document.querySelector('.modal')
+const btn = document.querySelector('.modalBtn');
+const modal = document.querySelector('.modal');
+const inputPassword = document.getElementById('senha');
 
 function login() {
   var nome = $("#nome").val();
@@ -30,4 +31,14 @@ const switchModal = () => {
   }
 }
 
-btn.addEventListener('click', switchModal)
+const showPassword = () => {
+  const actualType = inputPassword.type;
+  if (actualType == 'password') {
+    inputPassword.type = 'text';
+  } else {
+    inputPassword.type = 'password';
+  }
+}
+
+btn.addEventListener('click', showPassword);
+btn.addEventListener('click', switchModal);
