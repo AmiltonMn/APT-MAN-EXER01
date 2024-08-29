@@ -3,56 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="loja.css">
     <title>Loja</title>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
-      body {
-        width: 100vw;
-        height: auto;
-        overflow-x: hidden;
-        padding: 20px;
-      }
-      
-      .idPerfil {
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-      }
-
-      #produtosContainer
-      {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-    
-    </style>
   </head>
   <body>
-    <a href="../Carrinho/carrinho.html">Ir para carrinho</a>
-    <div>
+    <div id="infos">
+      
+      <button id="btnCarrinho">
+        <a href="../Carrinho/carrinho.html">Ir para carrinho</a>
+        <img id="carrinhoImg" src="/Imagens/carrinho.png" width="25px" height="25px" alt="">
+      </button>
+      
       <h5 id="perfil"></h5>
-      <div class="idPerfil">
-        Protocolo atual:
-        <p id="idPerfil"></p>
+
+      <p id="idPerfil"></p>
+
       </div>
-    </div>
-    <h1>Loja</h1>
-    <p>Bem vindo <span id="user"></span> , vamos as compras!</p>
-    <br />
-    <h2>Produtos</h2>
-    <br />
 
-    <div id="produtosContainer">
+      <div>
+        
+      <h1 class="titulo">LOJA</h1>
+      
+      <p class="titulo">Bem vindo <span id="user"></span> , vamos as compras!</p>
 
-    </div>
-
-    <script src="script.js"></script>
-
+      <h2 class="titulo">Produtos</h2>
+        
+        <div id="produtosContainer">
+          
+        </div>
+    
+      <script src="script.js"></script>
   </body>
 </html>

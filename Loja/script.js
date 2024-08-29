@@ -5,9 +5,9 @@ let produtos;
 window.onload = function () {
   var storedUser = localStorage.getItem("usuario");
   var user = JSON.parse(storedUser);
-  document.getElementById("user").textContent = user.name;
-  document.getElementById("perfil").textContent = user.name;
-  document.getElementById("idPerfil").textContent = user.id;
+  document.getElementById("user").innerHTML = user.name;
+  document.getElementById("perfil").innerHTML = "Usuário: " + user.name;
+  document.getElementById("idPerfil").innerHTML = "Protocolo atual: " + user.id;
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -30,22 +30,22 @@ document.addEventListener("DOMContentLoaded", function () {
         imagem.style.width = "200px";
         imagem.style.height = "200px";
         
-        const cardBody = document.createElement("div");
-          cardBody.className = "card-body";
-        
-        const cardTitle = document.createElement("h5");
-          cardTitle.className = "card-title";
-          cardTitle.textContent = produto.Nome;
-        
-        const cardText = document.createElement("p");
-          cardText.className = "card-text";
-          cardText.textContent = "Preço: $" + produto.Valor;
-        
-        const btnAdicionarAoCarrinho = document.createElement("a");
-          btnAdicionarAoCarrinho.href = "#";
-          btnAdicionarAoCarrinho.className = "btn-adicionar-ao-carrinho";
-          btnAdicionarAoCarrinho.textContent = "Adicionar ao Carrinho";
-          btnAdicionarAoCarrinho.setAttribute("data-indice", index);
+      const cardBody = document.createElement("div");
+        cardBody.className = "card-body";
+      
+      const cardTitle = document.createElement("h5");
+        cardTitle.className = "card-title";
+        cardTitle.textContent = produto.Nome;
+      
+      const cardText = document.createElement("p");
+        cardText.className = "card-text";
+        cardText.textContent = "Preço: $" + produto.Valor;
+      
+      const btnAdicionarAoCarrinho = document.createElement("a");
+        btnAdicionarAoCarrinho.href = "#";
+        btnAdicionarAoCarrinho.className = "btn-adicionar-ao-carrinho";
+        btnAdicionarAoCarrinho.textContent = "Adicionar ao Carrinho";
+        btnAdicionarAoCarrinho.setAttribute("data-indice", index);
         
         cardBody.appendChild(cardTitle);
         cardBody.appendChild(cardText);
