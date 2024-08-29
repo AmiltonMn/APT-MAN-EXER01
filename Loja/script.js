@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
         carrinho.push(produtoSelecionado);
         localStorage.setItem("carrinho", JSON.stringify(carrinho));
-        alert('Adicionado')
+        alert('O produto foi adicionado!')
       }
     );
   });
