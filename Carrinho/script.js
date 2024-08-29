@@ -38,7 +38,7 @@ $(document).ready(function () {
       listaElement.append(listItem);
 
       // Adiciona o preço do item ao total
-      totalPreco += item.preco;
+      totalPreco += item.Valor;
     });
 
     // Exibe o total em preço no elemento totalElement
@@ -92,4 +92,13 @@ function gerarDocumentoWord() {
   link.download = "carrinho.doc";
   link.click();
   document.getElementById("pedido").style.display = "block";
+}
+
+const switchModal = () => {
+  const modal = document.getElementById('pedido')
+  if (modal.style.display == 'block') {
+    modal.style.display = 'none'
+  } else {
+    modal.style.display = 'block'
+  }
 }
