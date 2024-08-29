@@ -20,13 +20,15 @@ $(document).ready(function () {
     $.each(carrinho, function (index, item) {
       // Cria um elemento de lista para cada item
       const listItem = $("<li>").text(
-        `${item.Nome} - Preço: $${(item.Valor).toFixed(2)}`
+        `Produto ${index + 1}: ${item.Nome} | Preço: $${(item.Valor).toFixed(2)}`
       );
 
       // Cria um botão de remoção
       const removeButton = $("<button>")
         .text("❌")
-        .css("margin-left", "10px")
+        .css({
+          "margin-left": "15px", 
+        })
         .click(function () {
           removerItemDoCarrinho(index);
         });

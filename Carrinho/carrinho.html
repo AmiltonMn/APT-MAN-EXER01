@@ -4,27 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrinho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.0.1/mammoth.browser.min.js"></script>
-    <style>
-      
-    </style>
   </head>
   <body>
-    <a href="../Loja/loja.html">Continuar comprando</a>
-    <h1>Carrinho</h1>
-      <div id="lista"></div>
+  
+    <button id="continuarComprando">
+
+      <img src="/Imagens/Seta.png" width="25px" height="25px" alt="">
+      <a id="btnText" href="../Loja/loja.html">Continuar comprando</a>
+
+    </button>
+
+    <main>
+
+      <div id="titulo">
+        <h1>Carrinho</h1>
+      </div>
+  
+      <div id="lista">
+  
+      </div>
+  
+      <hr>
+  
       <h3 id="total"></h3>
-    <button onclick="gerarDocumentoWord()">Realizar pedido</button>
+  
+      <button id="gerarDoc" onclick="gerarDocumentoWord()">
+        Realizar pedido
+      </button>
+
+    </main>
+
     <div id="pedido">
 
       <div id="pedidoContent">
+
         <p>Pedido gerado com sucesso</p>
         <p onclick="switchModal()">❌</p>
+
       </div>
 
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
